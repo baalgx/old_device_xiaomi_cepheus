@@ -61,6 +61,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib64/hw/camera.qcom.so)
+            sed -i "s|libc++.so|libc29.so|g" "${2}"
+            ;;
     system_ext/lib64/libwfdnative.so)
         patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
         ;;
