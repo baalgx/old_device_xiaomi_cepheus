@@ -24,9 +24,6 @@ persist.vendor.sys.pay.                 u:object_r:mlipay_prop:s0
 persist.vendor.sys.provision.status     u:object_r:mlipay_prop:s0
 ro.hardware.fp.fod                      u:object_r:mlipay_prop:s0
 
-# Pixel PowerHAL
-vendor.powerhal.                        u:object_r:vendor_power_prop:s0
-
 # Sensor
 persist.sensor.                         u:object_r:persist_sensors_prop:s0
 

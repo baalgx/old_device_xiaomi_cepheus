@@ -207,6 +207,7 @@ VENDOR_SECURITY_PATCH := 2021-10-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmnile
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
