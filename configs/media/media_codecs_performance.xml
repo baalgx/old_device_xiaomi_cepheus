@@ -58,24 +58,6 @@ limitations under the License.
             <Limit name="measured-frame-rate-1280x720" range="26-56" />
             <Limit name="measured-frame-rate-1920x1080" range="20-44" />
         </MediaCodec>
-        <MediaCodec name="OMX.google.h264.encoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="215-215" />
-            <Limit name="measured-frame-rate-720x480" range="100-100" />
-            <Limit name="measured-frame-rate-1280x720" range="56-56" />
-            <Limit name="measured-frame-rate-1920x1080" range="30-30" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.h263.encoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="310-410" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.mpeg4.encoder" type="video/mp4v-es" update="true">
-            <Limit name="measured-frame-rate-176x144" range="390-480" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.vp8.encoder" type="video/x-vnd.on2.vp8" update="true">
-            <Limit name="measured-frame-rate-320x180" range="93-94" />
-            <Limit name="measured-frame-rate-640x360" range="32-32" />
-            <Limit name="measured-frame-rate-1280x720" range="17-24" />
-            <Limit name="measured-frame-rate-1920x1080" range="16-20" />
-        </MediaCodec>
         <MediaCodec name="c2.android.hevc.encoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-320x240" range="22-35" />
         </MediaCodec>
@@ -96,6 +78,18 @@ limitations under the License.
             <Limit name="measured-frame-rate-640x360" range="150-233" />
             <Limit name="measured-frame-rate-1280x720" range="43-61" />
             <Limit name="measured-frame-rate-1920x1080" range="19-27" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-320x240" range="121-286" />
+            <Limit name="measured-frame-rate-720x480" range="49-110" />
+            <Limit name="measured-frame-rate-1280x720" range="19-41" />
+            <Limit name="measured-frame-rate-1920x1080" range="20-30" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.av1-dav1d.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-320x240" range="121-286" />
+            <Limit name="measured-frame-rate-720x480" range="60-120" />
+            <Limit name="measured-frame-rate-1280x720" range="60-90" />
+            <Limit name="measured-frame-rate-1920x1080" range="40-60" />
         </MediaCodec>
         <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true">
             <Limit name="measured-frame-rate-320x180" range="109-109" />
@@ -147,42 +141,6 @@ limitations under the License.
             <Limit name="measured-frame-rate-1280x720" range="200-420" />
             <Limit name="measured-frame-rate-1920x1088" range="189-301" />
         </MediaCodec>
-        <MediaCodec name="OMX.google.h264.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="122-370" />
-            <Limit name="measured-frame-rate-720x480" range="135-310" />
-            <Limit name="measured-frame-rate-1280x720" range="32-32" />
-            <Limit name="measured-frame-rate-1920x1080" range="24-26" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="104-279" />
-            <Limit name="measured-frame-rate-352x288" range="200-200" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.hevc.decoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-352x288" range="502-550" />
-            <Limit name="measured-frame-rate-640x360" range="267-271" />
-            <Limit name="measured-frame-rate-720x480" range="254-257" />
-            <Limit name="measured-frame-rate-1280x720" range="94-95" />
-            <Limit name="measured-frame-rate-1920x1080" range="47-49" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.mpeg4.decoder" update="true">
-            <Type name="video/mp4v-es">
-                <Limit name="measured-frame-rate-176x144" range="430-450" />
-            </Type>
-        </MediaCodec>
-        <MediaCodec name="OMX.google.vp8.decoder" type="video/x-vnd.on2.vp8" update="true">
-            <Limit name="measured-frame-rate-320x180" range="1103-1170" />
-            <Limit name="measured-frame-rate-320x240" range="330-381" />
-            <Limit name="measured-frame-rate-640x360" range="487-490" />
-            <Limit name="measured-frame-rate-1280x720" range="22-38" />
-            <Limit name="measured-frame-rate-1920x1080" range="39-40" />
-        </MediaCodec>
-        <MediaCodec name="OMX.google.vp9.decoder" type="video/x-vnd.on2.vp9" update="true">
-            <Limit name="measured-frame-rate-320x180" range="861-909" />
-            <Limit name="measured-frame-rate-320x240" range="200-230" />
-            <Limit name="measured-frame-rate-640x360" range="265-268" />
-            <Limit name="measured-frame-rate-1280x720" range="83-190" />
-            <Limit name="measured-frame-rate-1920x1080" range="48-140" />
-        </MediaCodec>
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="196-269" />
             <Limit name="measured-frame-rate-720x480" range="56-77" />
@@ -202,6 +160,12 @@ limitations under the License.
             <Limit name="measured-frame-rate-1280x720" range="107-145" />
             <Limit name="measured-frame-rate-1920x1080" range="31-43" />
         </MediaCodec>
+        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-352x288" range="186-426" />
+            <Limit name="measured-frame-rate-720x480" range="102-228" />
+            <Limit name="measured-frame-rate-1280x720" range="52-116" />
+            <Limit name="measured-frame-rate-1920x1080" range="20-30" />
+        </MediaCodec>
         <MediaCodec name="c2.android.vp9.decoder" type="video/x-vnd.on2.vp9" update="true">
             <Limit name="measured-frame-rate-320x180" range="415-575" />
             <Limit name="measured-frame-rate-640x360" range="200-450" />
@@ -209,7 +173,7 @@ limitations under the License.
             <Limit name="measured-frame-rate-1920x1080" range="28-38" />
         </MediaCodec>
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="483-663" />
+            <Limit name="measured-frame-rate-176x144" range="436-2502" />
             <Limit name="measured-frame-rate-352x288" range="324-769" />
         </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
