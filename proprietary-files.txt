@@ -585,8 +585,8 @@ vendor/lib64/libllvm-glnext.so|10ce1497960c732b8077cc1bd42e3d8dba96e943
 vendor/lib64/libllvm-qcom.so|01c37f8efc8362168666fc811082dbbee14fbcbd
 
 # Graphics (Vulkan) - from LA.UM.9.14.r1-18900-LAHAINA.QSSI12.0
-vendor/lib/hw/vulkan.adreno.so|ca43eefab537c1ee8ec4bb9dbae06331f2bd872b
-vendor/lib64/hw/vulkan.adreno.so|3e981baca903027296ddccfc4b7fb73e4c190d90
+vendor/lib/hw/vulkan.adreno.so|3c5fc46d3360688f198aa732bd265d655bbba1d5
+vendor/lib64/hw/vulkan.adreno.so|ef355a774941620917f1ba1f0b48c9193091aad4
 
 # Graphics (firmware)
 vendor/firmware/a612_rgmu.bin
@@ -869,6 +869,8 @@ system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|e627b85a9268734c5e66adf
 system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|517127c426fa94f28d97409bc7d07ca4cb92a9b0
 system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|c7ea95f134ca6dc2b569b8c9b1c9b433bb6dae0c
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|f221e0dfbb89daab9cca03104f9a92b2fd9b15bc
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
 system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so|6041113b31903b84a31249bebb94f3c90eab72b9
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so|f249ea043143606d464119d5ee3d7faf5237e8d7
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so|1040fd4b1a54451ea31fae00a8a786ea3066a6a1
@@ -882,8 +884,6 @@ system_ext/lib64/lib-imsvt.so|2dd3277d4a8e4b4c0afb5dd129f650b56e595179
 system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
 system_ext/lib64/lib-imsvtutils.so|501c2081942844498c466b49a09b79615e5ba877
 system_ext/lib64/libdiag_system.so|6aeef939361f7fecb11cfefc22ceddb17b92d73c
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
 system_ext/lib64/vendor.qti.diaghal@1.0.so|cb9428b76c47d283d614833ed9207a894ab533ce
 system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so|b83da3ef881f3f27f555aa330dc61270c6dc69df
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so|f37885328516061c5003bafe1424827a2edfa93f
