@@ -545,11 +545,11 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|3ff445db2dd2db1a1068fe70a54a6c
 
 # Graphics - from Xiaomi/nabu/nabu:11/RKQ1.200826.002/V13.0.3.0.RKXCNXM:user/release-keys
 -vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
-vendor/lib/egl/eglSubDriverAndroid.so|a9d540641ac06335bf3689926da50d0408e2863e
 vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so|f77d54d08edbbf13add12518338ff389c873e1cd
-vendor/lib/egl/libGLESv1_CM_adreno.so|f85c647f07feb5e850426b8b04107e6fcbe73a42
 vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so|bbbf71932164655ecb2126b907e1d9cb2d897ebb
 vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so|89416a47b7105de1e81d0540c6e2a82ae33b4dda
+vendor/lib/egl/eglSubDriverAndroid.so|a9d540641ac06335bf3689926da50d0408e2863e
+vendor/lib/egl/libGLESv1_CM_adreno.so|f85c647f07feb5e850426b8b04107e6fcbe73a42
 vendor/lib/egl/libq3dtools_esx.so|bfbd1e76dc1f81039ffebd6b7534be52173c349d
 vendor/lib/hw/vulkan.adreno.so|bafd65cc8786aeb5bdc12e3c8db09fecdbcb2d01
 vendor/lib/libC2D2.so|bf22239cc4a003a6cd1b3e273f60dc37e4d51730
@@ -564,11 +564,11 @@ vendor/lib/libgsl.so|3e919532b22d1ba53a9f6141fdb3a9fbd1901f43
 vendor/lib/libllvm-glnext.so|caf1127450a30dfd034398cf142525f505071944
 vendor/lib/libllvm-qcom.so|f7ee34774bbdb3e01a5ecaf9e98ac8f924b710f9
 vendor/lib/libpvr.so|a1f1896b9f50223a9285d3496b8f9bcfa98d004d
-vendor/lib64/egl/eglSubDriverAndroid.so|c950953ab821212322c44497c40f7bec912620a7
 vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so|066dc49939ceec71978268737f3a32c8f2aeddf2
-vendor/lib64/egl/libGLESv1_CM_adreno.so|a5ee6c77ea24be2423f661eeddfc868d279d4378
 vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so|e349a692959c6715da4b35e84c82c0eee4b01e00
 vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so|0edfcd0c063a82a4ab29542243a0f842632f31ee
+vendor/lib64/egl/eglSubDriverAndroid.so|c950953ab821212322c44497c40f7bec912620a7
+vendor/lib64/egl/libGLESv1_CM_adreno.so|a5ee6c77ea24be2423f661eeddfc868d279d4378
 vendor/lib64/egl/libq3dtools_esx.so|8ba3d0cbe51dff3b860cca48dcd294ccd0816e18
 vendor/lib64/hw/vulkan.adreno.so|c00dfeefef27d950de5a10234cf78b4614521939
 vendor/lib64/libC2D2.so|21a3b027b0857ee910f9db3e7558f35aafaadef5
@@ -865,6 +865,8 @@ system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|e627b85a9268734c5e66adf
 system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|517127c426fa94f28d97409bc7d07ca4cb92a9b0
 system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|c7ea95f134ca6dc2b569b8c9b1c9b433bb6dae0c
 system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|f221e0dfbb89daab9cca03104f9a92b2fd9b15bc
+system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
+system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
 system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so|6041113b31903b84a31249bebb94f3c90eab72b9
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so|f249ea043143606d464119d5ee3d7faf5237e8d7
 system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so|1040fd4b1a54451ea31fae00a8a786ea3066a6a1
@@ -878,8 +880,6 @@ system_ext/lib64/lib-imsvt.so|2dd3277d4a8e4b4c0afb5dd129f650b56e595179
 system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
 system_ext/lib64/lib-imsvtutils.so|501c2081942844498c466b49a09b79615e5ba877
 system_ext/lib64/libdiag_system.so|6aeef939361f7fecb11cfefc22ceddb17b92d73c
-system_ext/lib64/libimscamera_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
-system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so|d1b4c03352a9b34f4d26a4fe3a8595f295c7cef8
 system_ext/lib64/vendor.qti.diaghal@1.0.so|cb9428b76c47d283d614833ed9207a894ab533ce
 system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so|b83da3ef881f3f27f555aa330dc61270c6dc69df
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so|f37885328516061c5003bafe1424827a2edfa93f
