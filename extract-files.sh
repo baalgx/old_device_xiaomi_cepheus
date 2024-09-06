@@ -78,6 +78,9 @@ function blob_fixup() {
     proprietary/vendor/bin/sensors.qti | proprietary/vendor/lib64/libsnsapi.so | proprietary/vendor/lib64/libsnsdiaglog.so | proprietary/vendor/lib64/libssc.so | proprietary/vendor/lib64/libwvhidl.so | proprietary/vendor/lib64/mediadrm/libwvdrmengine.so | proprietary/vendor/lib64/sensors.ssc.so )
         "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "${2}"
         ;;
+        vendor/lib64/libwvhidl.so)
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+        ;;
     esac
 }
 

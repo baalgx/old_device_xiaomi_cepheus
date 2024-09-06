@@ -494,7 +494,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    libpiex_shim \
+    libcrypto-v34
 
 # Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 28
