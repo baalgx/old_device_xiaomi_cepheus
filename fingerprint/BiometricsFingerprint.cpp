@@ -408,8 +408,10 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
                 set(DIMLAYER_HBM_PATH, DIMLAYER_HBM_OFF);
                 set(FOD_STATUS_PATH, FOD_STATUS_OFF);
             }
-            if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
-                ALOGE("failed to invoke fingerprint onAcquired callback");
+            if (result != FingerprintAcquiredInfo::ACQUIRED_VENDOR) {
+                if (!thisPtr->mClientCallback->onAcquired(devId, result, vendorCode).isOk()) {
+                    ALOGE("failed to invoke fingerprint onAcquired callback");
+                }
             }
         } break;
         case FINGERPRINT_TEMPLATE_ENROLLING:
