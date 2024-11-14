@@ -18,6 +18,10 @@
 #include <drm/sde_drm.h>
 #include <compositionengine/UdfpsExtension.h>
 
+uint32_t getUdfpsDimZOrder(uint32_t z) {
+    return z;
+}
+
 uint32_t getUdfpsZOrder(uint32_t z, bool touched) {
     if (touched) {
         z |= FOD_PRESSED_LAYER_ZORDER;
